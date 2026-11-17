@@ -1,0 +1,27 @@
+{
+  "name": "chatgpt-chrome-connector",
+  "version": "1.2.0",
+  "description": "MCP server bridging the ChatGPT desktop app to Chrome",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "tunnel": "node index.js --tunnel",
+    "test": "node test/e2e.mjs",
+    "build:win": "bash ../build/build-windows.sh"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "ws": "^8.23.0",
+    "zod": "^4.6.7"
+  },
+  "type": "module",
+  "bin": {
+    "chatgpt-chrome-connector": "index.js"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "postject": "^1.0.0-alpha.6"
+  }
+}

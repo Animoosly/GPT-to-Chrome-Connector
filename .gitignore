@@ -1,0 +1,8 @@
+node_modules/
+*.zip
+token.json
+dist/
+build/vendor/
+build/out/
+build/.wine/
+.claude/
